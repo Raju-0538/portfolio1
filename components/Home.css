@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.one {
+    width: 60%;
+    color: white;
+}
+.two{
+    width: 30%;
+    color: white;
+}

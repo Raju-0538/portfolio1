@@ -1,0 +1,121 @@
+.App {
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.App.show {
+    opacity: 1;
+}
+
+/* Linear Gradient Animation for Heading */
+h1 {
+    background: linear-gradient(90deg, red, blue, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    animation: gradient 3s infinite;
+}
+
+/* Reduced Text Size for Description */
+.description {
+    background: linear-gradient(90deg, white, gray, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    animation: gradient 3s infinite;
+    font-size: 22px;
+    line-height: 1.5;
+    text-indent: 110px; 
+}
+
+.App.show h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.App.show .description {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+/* Social Icons Animation */
+.social-icons {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    margin-left: 200px;
+}
+
+.App.show .social-icons {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+
+/* Button Animation */
+.but {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.App.show .but {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
+/* Hover Effect for Social Icons */
+.social-icons svg {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icons svg:hover {
+    transform: scale(1.2);
+}
+
+/* Button Styles */
+.but button {
+    height: 50px;
+    width: 150px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-left: 230px;
+    color: rgb(1, 1, 1);
+    font-size: 15px;
+    margin-top: 40px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.but button:hover {
+    cursor: pointer;
+    background-color: rgb(25, 216, 187);
+    color: black;
+    transition: .10s;
+}
+
+/* Background Color */
+body {
+    background-color: black;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    color: black;
+}

@@ -1,0 +1,125 @@
+.about-me-section {
+    background: linear-gradient(135deg, #283048, #859398);
+    color: #fff;
+    padding: 60px 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: -90px;
+  }
+  .cont2{
+    margin-left: -80px;
+    margin-top: -20px;
+  }
+  .about-me-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 30px;
+    max-width: 900px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .about-me-container:hover {
+    transform: translateY(-10px);
+  }
+  
+  .profile-wrapper {
+    flex: 1;
+    text-align: center;
+    min-height: 500px;  /* Make sure it is not 0 */
+    min-width: 500px;
+    overflow: visible;   /* Ensure the image is not clipped */
+  }
+  
+  
+  
+  .profile-pic {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 400px;
+    max-height: 750px;
+    object-fit: cover;
+    background-color: none;
+    border: none;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+  }
+  
+  .about-details {
+    flex: 2;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .about-subtitle {
+    font-size: 24px;
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .about-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-list li {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .about-list li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+  }
+  
+  .about-list li:hover {
+    transform: translateX(10px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 28px;
+    }
+    .about-description {
+      font-size: 16px;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  
